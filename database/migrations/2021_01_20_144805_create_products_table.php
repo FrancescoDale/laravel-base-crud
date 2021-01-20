@@ -19,6 +19,7 @@ class CreateProductsTable extends Migration
             $table->string('color',20);
             $table->string('size',20);
             $table->float('price', 6, 2);
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }
