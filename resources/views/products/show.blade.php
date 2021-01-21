@@ -6,7 +6,7 @@
         <ul class="text-capitalize mt-4">
             <li> {{ $product->name }} </li>
             <li> {{ $product->color }} </li>
-            <li> {{ $product->price }} </li>
+            <li> {{ $product->price }} € </li>
             <li> {{ $product->size }} </li>
             <li> {{ $product->description }} </li>
         </ul>

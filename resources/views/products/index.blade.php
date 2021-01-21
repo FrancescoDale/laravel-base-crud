@@ -2,6 +2,7 @@
 
 @section('content')
     <h1 class=" text-center text-capitalize mt-4">inventario</h1>
+
     <table class="table">
         <thead>
             <tr class="text-capitalize">
@@ -44,4 +45,9 @@
             @endforeach
         </tbody>
     </table>
+    <div class="container">
+
+        <a href="{{ route('products.create') }}" class="mt-4 text-uppercase btn btn-info">inserisci nuovo prodotto</a>
+
+    </div>
 @endsection
