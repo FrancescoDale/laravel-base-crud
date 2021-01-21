@@ -39,7 +39,8 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        return 'test';
+        $data = $request->all();
+        $new_product = new Product();
     }
 
     /**
