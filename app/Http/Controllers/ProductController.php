@@ -41,12 +41,15 @@ class ProductController extends Controller
     {
         $data = $request->all();
         $new_product = new Product();
-        $new_product->name = $data['name'];
-        $new_product->color = $data['color'];
-        $new_product->price = $data['price'];
-        $new_product->size = $data['size'];
-        $new_product->description = $data['description'];
+        // $new_product->name = $data['name'];
+        // $new_product->color = $data['color'];
+        // $new_product->price = $data['price'];
+        // $new_product->size = $data['size'];
+        // $new_product->description = $data['description'];
+        $new_product->fill($data);
         $new_product->save();
+
+        return redirect()->route('products.store');
     }
 
     /**
